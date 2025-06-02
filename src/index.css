@@ -1,0 +1,62 @@
+    /*
+      Reset default CSS so that App fills page
+      and is in full control of style
+    */
+    html,
+    body,
+    #root {
+      display: flex;
+      flex-direction: column;
+      background-color: #242424;
+      color: white;
+      flex-grow: 1;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+    }
+
+    .table-bordered {
+      border-collapse: collapse;
+      width: 75%;
+    }
+
+    .table-bordered th,
+    .table-bordered td {
+      border: 1px solid #333;
+      padding: 8px;
+      text-align: left;
+    }
+
+    .table-bordered th {
+      background: #f0f0f0;
+    }
+
+    .modalContainer {
+      position: fixed;
+      top: 100;
+      left: 0;
+      width: 75%;
+      height: 50%;
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      z-index: 1200;
+      overflow-y: auto;
+    }
+
+    .modalBody {
+
+      background: #181818;
+        color: "#fff";
+        padding: 32;
+        border-radius: 12;
+        min-width: 350;
+        max-width: 90;
+        width: 100%;
+        box-sizing: "0 4px 32px rgba(0,0,0,0.8)";
+        border: 1px solid #333;
+        box-sizing: border-box;
+    }
