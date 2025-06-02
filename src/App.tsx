@@ -79,8 +79,32 @@ function App() {
       </table>
 
       {modalOpen && selectedSet && (
-        <div className="modalContainer" onClick={() => setModalOpen(false)}>
-          <div className="modalBody">
+        <div style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          width: "75%",
+          height: "1000px",
+          background: "rgba(0,0,0,0.7)",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          alignSelf:'center',
+          zIndex: 1200,
+          overflowY: 'auto',
+        }} onClick={() => setModalOpen(false)}>
+          <div style={{
+            background: "#181818",
+            color: "#fff",
+            padding: 32,
+            borderRadius: 12,
+            minWidth: 350,
+            maxWidth: 90,
+            width: '100%',
+            boxShadow: "0 4px 32px rgba(0,0,0,0.8)",
+            border: "1px solid #333",
+            boxSizing: 'border-box',
+          }}>
             <h2 style={{ color: '#fff', marginBottom: 20 }}>Set Cards</h2>
           </div>
           <table className="table-bordered">
